@@ -9,6 +9,35 @@ import XCTest
 @testable import SwiftTesting
 
 final class SwiftTestingTests: XCTestCase {
+    
+    
+    let math = MathematicFunctions()
+    
+    func testAddIntegerFunction(){
+        let result = math.addIntegers(x: 5, y: 8)
+        
+        XCTAssertEqual(result, 13)
+        
+        
+    }
+    
+    func testMultiplyFunction(){
+        let result = math.addIntegers(x: 5, y: 8)
+        
+        XCTAssertEqual(result, 40)
+        
+        
+    }
+    
+    func testDivideIntegerFunction(){
+        let result = math.addIntegers(x: 10, y: 2)
+        
+        XCTAssertEqual(result, 5)
+        
+        
+    }
+    
+    
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
